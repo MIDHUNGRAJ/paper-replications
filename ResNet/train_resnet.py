@@ -1,12 +1,5 @@
 # Test harness for resnet.py — trains on Imagenette (10-class real-ImageNet subset) at 224x224.
 # Run from the same directory as resnet.py: python train_resnet.py
-#
-# Full ImageNet (1.28M imgs, ~150GB) requires applying for access at image-net.org and
-# would take days to train from scratch on a 4GB card — not practical for a sanity check.
-# Imagenette is the standard stand-in: real ImageNet images/classes, same 224x224 pipeline,
-# auto-downloads, no login. If you already have full ImageNet locally, replace the
-# datasets.Imagenette(...) lines below with datasets.ImageFolder(your_train_dir, ...) /
-# datasets.ImageFolder(your_val_dir, ...) — everything else stays the same.
 
 import torch
 import torch.nn as nn
